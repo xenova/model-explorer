@@ -7,6 +7,7 @@ import {
   Moon,
   Sun,
   ExternalLink,
+  Code,
 } from "lucide-react";
 import { useTheme } from "next-themes";
 import ModelList from "@/components/model-list";
@@ -185,8 +186,17 @@ export default function Home() {
           />
         </div>
 
-        {/* Theme toggle at bottom of sidebar */}
-        <div className="p-4 border-t flex justify-start">
+        {/* GitHub link and Theme toggle */}
+        <div className="p-4 border-t flex justify-end gap-2">
+          <a
+            href="https://github.com/xenova/model-explorer"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <Button variant="outline" size="icon">
+              <Code className="h-5 w-5" />
+            </Button>
+          </a>
           <Button
             variant="outline"
             size="icon"
