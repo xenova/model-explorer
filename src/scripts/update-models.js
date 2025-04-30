@@ -42,6 +42,7 @@ for await (const file of files) {
 // 3. Sort models by a priority score, defined below
 const PRIORITY_MODELS = [
   "HuggingFaceTB/SmolLM2-1.7B-Instruct", // SmolLM2 (Llama)
+  "onnx-community/Qwen3-0.6B-ONNX", // Qwen3
   "onnx-community/whisper-large-v3-ONNX", // Whisper
   "onnx-community/DeepSeek-R1-Distill-Qwen-1.5B-ONNX", // DeepSeek-R1 (Qwen2)
   "onnx-community/gemma-3-1b-it-ONNX-GQA", // Gemma
